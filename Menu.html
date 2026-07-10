@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú - El Centollo</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="estilos.css">
+ 
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+ 
+body{
+    background:#f5f5f5;
+}
+ 
+header{
+    background:white;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+ 
+header h1{
+    color:#222;
+    margin-bottom:10px;
+}
+ 
+header a{
+    text-decoration:none;
+    color:#0a66c2;
+    font-weight:bold;
+}
+ 
+.contenedor-menu{
+    width:95%;
+    max-width:1200px;
+    margin:20px auto;
+}
+ 
+.tarjeta{
+    background:white;
+    display:flex;
+    margin-bottom:12px;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 2px 6px rgba(185, 96, 96, 0.12);
+    transition:.3s;
+}
+ 
+.tarjeta:hover{
+    transform:translateY(-3px);
+}
+ 
+.tarjeta img{
+    width:180px;
+    height:120px;
+    object-fit:cover;
+}
+ 
+.info{
+    flex:1;
+    padding:12px 15px;
+}
+ 
+.info h2{
+    font-size:20px;
+    color:#222;
+    margin-bottom:8px;
+}
+ 
+.info p{
+    color:#666;
+    font-size:14px;
+    line-height:1.5;
+    margin-bottom:8px;
+}
+ 
+.detalles{
+    color:#888;
+    font-size:13px;
+}
+ 
+.precio{
+    color:#d35400;
+    font-size:20px;
+    font-weight:bold;
+    display:block;
+    margin-top:10px;
+}
+ 
+@media(max-width:768px){
+ 
+    .tarjeta{
+        flex-direction:column;
+    }
+ 
+    .tarjeta img{
+        width:100%;
+        height:220px;
+    }
+ 
+}
+ 
+</style>
+</head>
+ 
+<body>
+ 
+<<div class="contenedor">
+
+```
+<div class="logo">
+    <img src="centollo2.png" alt="Logo El Centollo">
+    <h1>El Centollo</h1>
+</div>
+
+<div class="menu">
+    <a href="index.html">🏠 Inicio</a>
+    <a href="Menu.html">📋 Menú</a>
+    <a href="Contacto.html">📞 Contacto</a>
+    <a href="ubicacion.html">📍 Ubicación</a>
+    <a href="reservas.html">📅 Reservas</a>
+    <a href="Integrantes.html">👥 Integrantes</a>
+</div>
+```
+
+</div>
+<div class="contenedor-menu">
+    <div class="tarjeta">
+        <img src="receta1.png" alt="Plato 1">
+        <div class="info">
+            <h2>Falsa Mousse de Centollo</h2>
+            <p>Huevos codidos - palitos de cangrejo - mejillones al natural escurridos - berberechos al natural escurridos - mayonesa - nata para cocinar - sal - cucharitas comestibles</p>
+            <p class="detalles">⏱ 25 minutos • 👥 Berta Alvarez</p>
+            <span class="precio">$28.000</span>
+        </div>
+        <div class="favorito"><i class="far fa-bookmark" onclick="toggleFavorito(this)"></i></div>
+    </div>
+
+    <div class="tarjeta">
+        <img src="receta2.png" alt="Plato 2">
+        <div class="info">
+            <h2>Crema de Centolla</h2>
+            <p>Centollas cocidas · Cebollas medianas · Leche entera con calcio · Maicena · Sal · Pimienta negra · Nuez moscada · Aceite de oliva virgen extra · Pan rallado (previamente tostado con...).</p>
+            <p class="detalles">⏱ 50 min • 👥 Arianne</p>
+            <span class="precio">$25.000</span>
+        </div>
+        <div class="favorito"><i class="far fa-bookmark" onclick="toggleFavorito(this)"></i></div>
+    </div>
+
+    <div class="tarjeta">
+        <img src="receta3.png" alt="Plato 3">
+        <div class="info">
+            <h2>Palta Rellena</h2>
+            <p>Carne de centolla cocida · cebolla morada cortada en cuadritos · pimiento morrón cortado en cuadritos · apio cortado en cuadritos · cilantro picado · mayonesa · mostaza a la piedra.</p>
+            <p class="detalles">⏱ 30 minutos • 👥 Jon Michelena</p>
+            <span class="precio">$30.000</span>
+        </div>
+        <div class="favorito"><i class="far fa-bookmark" onclick="toggleFavorito(this)"></i></div>
+    </div>
+
+    <!-- Plato 4 -->
+    <div class="tarjeta">
+        <img src="receta4.png" alt="Plato 4">
+        <div class="info">
+            <h2>Empanadas de Chupe</h2>
+            <p>Carne de centolla cocida · camarones descascarados, desvenados, cortados en trocitos · mantequilla sin sal · cebolla cortada en cuadritos.</p>
+            <p class="detalles">⏱ 2 horas • 👥 Jon Michelena</p>
+            <span class="precio">$18.000</span>
+        </div>
+        <div class="favorito"><i class="far fa-bookmark" onclick="toggleFavorito(this)"></i></div>
+    </div>
+
+    <div class="tarjeta">
+        <img src="receta5.png" alt="Plato 5">
+        <div class="info">
+            <h2>Mariscada Especial</h2>
+            <p>Centolla viva de 1 kilo y medio aproximadamente · conchas finas vivas · gambas frescas grandes · limones · ajos muy gruesos · perejil fresco.</p>
+            <p class="detalles">⏱ 50 minutos • 👥 Alexis Urrutia</p>
+            <span class="precio">$55.000</span>
+        </div>
+        <div class="favorito"><i class="far fa-bookmark" onclick="toggleFavorito(this)"></i></div>
+    </div>
+
+    <div class="tarjeta">
+        <img src="receta6.png" alt="Plato 6">
+        <div class="info">
+            <h2>Spaghetti con Centolla</h2>
+            <p>Centollas (hervidas) · Spaghetti · Cebollas (en daditos) · ajo (en daditos) · Concentrado de tomate · Brandy · Estragón · Tomates cherry.</p>
+            <p class="detalles">⏱ 40 minutos • 👥 Arianne</p>
+            <span class="precio">$35.000</span>
+        </div>
+        <div class="favorito"><i class="far fa-bookmark" onclick="toggleFavorito(this)"></i></div>
+    </div>
+
+    <div class="tarjeta">
+        <img src="receta7.png" alt="Plato 7">
+        <div class="info">
+            <h2>Arroz Marinero</h2>
+            <p>Arroz preparado con mariscos frescos, calamares, especias de la casa y un toque de azafrán.</p>
+            <p class="detalles">⏱ 45 minutos • 👥 Chef Carlos Ruiz</p>
+            <span class="precio">$40.000</span>
+        </div>
+        <div class="favorito"><i class="far fa-bookmark" onclick="toggleFavorito(this)"></i></div>
+    </div>
+
+    <div class="tarjeta">
+        <img src="receta8.png" alt="Plato 8">
+        <div class="info">
+            <h2>Centolla Gratinada</h2>
+            <p>Carne de centolla seleccionada, salsa bechamel artesanal, queso parmesano, queso mozzarella, pan rallado, perejil fresco.</p>
+            <p class="detalles">⏱ 35 minutos • 👥 Chef Marco Valdés</p>
+            <span class="precio">$42.000</span>
+        </div>
+        <div class="favorito"><i class="far fa-bookmark" onclick="toggleFavorito(this)"></i></div>
+    </div>
+
+    <div class="tarjeta">
+        <img src="receta9.png" alt="Plato 9">
+        <div class="info">
+            <h2>Filete de Pescado</h2>
+            <p>Filete de pescado blanco fresco, mantequilla clarificada, limón, ajo, perejil, salsa suave de mariscos, sal y pimienta.</p>
+            <p class="detalles">⏱ 35 minutos • 👥 Chef Elena Castro</p>
+            <span class="precio">$32.000</span>
+        </div>
+        <div class="favorito"><i class="far fa-bookmark" onclick="toggleFavorito(this)"></i></div>
+    </div>
+
+    <div class="tarjeta">
+        <img src="receta10.png" alt="Plato 10">
+        <div class="info">
+            <h2>Combo Centollo Premium</h2>
+            <p>Selección mixta de carne de centolla, langostinos, calamares, especias de la casa, vegetales salteados y arroz especial.</p>
+            <p class="detalles">⏱ 60 minutos • 👥 Chef Santiago Rivas</p>
+            <span class="precio">$65.000</span>
+        </div>
+        <div class="favorito"><i class="far fa-bookmark" onclick="toggleFavorito(this)"></i></div>
+    </div>
+</div>
+
+</div>
+    <div class="favorito">
+        <i class="far fa-bookmark" onclick="toggleFavorito(this)"></i>
+    </div>
+</div>
+
+<footer class="pie-pagina">
+
+    <div class="banner-caracteristicas">
+
+        <div class="item-caracteristica">
+            <img src="foto1.png" alt="Más de 100 años">
+            <h4>MÁS DE 100 AÑOS</h4>
+            <p>Desde 1911 trabajando con el mejor producto del mar.</p>
+        </div>
+
+        <div class="item-caracteristica">
+            <img src="foto2.png" alt="Producto fresco">
+            <h4>EL PRODUCTO MÁS FRESCO</h4>
+            <p>Pescados y mariscos directos de la lonja.</p>
+        </div>
+
+        <div class="item-caracteristica">
+            <img src="foto3.png" alt="Ahumados">
+            <h4>AHUMADOS ARTESANALES</h4>
+            <p>Descubre nuestros procesos de ahumado.</p>
+        </div>
+
+        <div class="item-caracteristica">
+            <img src="foto4.png" alt="Tienda">
+            <h4>TIENDA PROPIA</h4>
+            <p>También te servimos en nuestra tienda física.</p>
+        </div>
+
+    </div>
+
+    <div class="pie-redes">
+
+        <a href="#" class="btn-red">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="#" class="btn-red">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="#" class="btn-red">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+    </div>
+
+    <div id="footer-container"></div>
+</footer>
+</body>
+</html>
+ 
